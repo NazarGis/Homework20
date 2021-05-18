@@ -1,0 +1,114 @@
+@mixin button($width:150px, $height:40px, $bg-color:$l24, $color:$light,$border:transparent){
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    color: $color;
+    cursor: pointer;
+    border-radius: 3px;
+    border: $border;
+    font-family: $font-medium;
+    text-transform: capitalize;
+}
+.btn1{
+    @include button(220px, 50px, $p2);
+    text-transform: uppercase;
+}
+.btn2{
+    @include button(280px, 50px, $d11);
+}
+.btn3{
+    @include button(200px, 50px, $d11);
+}
+.btn4{
+    @include button(220px, 50px, transparent, $p2, 1px solid $p2);
+    text-transform: uppercase;
+}
+.btn5{
+    @include button(200px, 50px, transparent, $d11, 1px solid $d11);
+}
+.btn1:hover{
+    @include button(220px, 50px, $l12);
+    text-transform: uppercase;
+}
+.btn2:hover{
+    @include button(280px, 50px, $l11);
+}
+.btn3:hover{
+    @include button(200px, 50px, $l11);
+}
+.btn4:hover{
+    @include button(220px, 50px, $l12);
+    text-transform: uppercase;
+}
+.btn5:hover{
+    @include button(200px, 50px, $l11);
+}
+.btn1:disabled{
+    @include button(220px, 50px);
+    text-transform: uppercase;
+}
+.btn2:disabled{
+    @include button(280px, 50px);
+}
+.btn3:disabled{
+    @include button(200px, 50px);
+}
+.btn4:disabled{
+    @include button(220px, 50px);
+    text-transform: uppercase;
+}
+.btn5:disabled{
+    @include button(200px, 50px);
+}
+.button1{
+    @include button($bg-color:$p2);
+    text-transform: uppercase;
+}
+.button2{
+    @include button($width:170px,$bg-color:$d11);
+}
+.button3{
+    @include button($bg-color:$d11);
+}
+.button4{
+    @include button($bg-color:transparent, $color:$p2,$border:1px solid $p2);
+}
+.button5{
+    @include button($bg-color:transparent, $color:$d11,$border:1px solid $d11);
+}
+.button1:hover{
+    @include button($bg-color:$l12);
+    text-transform: uppercase;
+}
+.button2:hover{
+    @include button($width:170px,$bg-color:$l11);
+}
+.button3:hover{
+    @include button($bg-color:$l11);
+}
+.button4:hover{
+    @include button($bg-color:$l12);
+}
+.button5:hover{
+    @include button($bg-color:$l11);
+}
+.button1:disabled{
+    @include button();
+    text-transform: uppercase;
+}
+.button2:disabled{
+    @include button($width:170px);
+}
+.button3:disabled{
+    @include button();
+}
+.button4:disabled{
+    @include button();
+}
+.button5:disabled{
+    @include button();
+}
+.buttons .row{
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

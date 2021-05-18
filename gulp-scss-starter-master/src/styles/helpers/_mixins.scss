@@ -1,0 +1,5 @@
+@mixin typography($f-size:14pt, $f-family:$font-medium, $f-color:$d34){
+    font-size: $f-size;
+    font-family: $f-family;
+    color: $f-color;
+}

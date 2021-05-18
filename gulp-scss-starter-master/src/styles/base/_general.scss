@@ -1,0 +1,138 @@
+h1, h2, h3, h4, h5, h6, ul, body {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    @include typography(35pt, $font-bold);
+}
+h2{
+    @include typography(33pt, $font-medium, $d24);
+}
+h3{
+    @include typography(27pt);
+}
+h4{
+    @include typography(22pt);
+}
+h5{
+    @include typography(17pt);
+}
+h6{
+    @include typography(15pt);
+}
+p{
+    @include typography(14pt, $font-regular);
+}
+.subtitles{
+    @include typography(20pt, $d14);
+}
+ul li{
+    @include typography(15pt, $font-medium, $d14);
+    list-style-image:url(../../img/chek-circle.png) ;
+}
+
+blockquote{
+    @include typography(17pt, $font-regular, $d11);
+    padding-left: 30px;
+    background-color: #e5f7fd;
+    border-left: 2px solid $p1;
+}
+.color{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.p1{
+    background-color: $p1;
+}
+.p2{
+    background-color: $p2;
+}
+.p3{
+    background-color: $p3;
+}
+.p4{
+    background-color: $p4;
+}
+.l11{
+    background-color: $l11;
+}
+.l12{
+    background-color: $l12;
+}
+.l13{
+    background-color: $l13;
+}
+.l14{
+    background-color: $l14;
+}
+
+.l21{
+    background-color: $l21;
+}
+.l22{
+    background-color: $l22;
+}
+.l23{
+    background-color: $l23;
+}
+.l24{
+    background-color: $l24;
+}
+
+.l31{
+    background-color: $l31;
+}
+.l32{
+    background-color: $l32;
+}
+.l33{
+    background-color: $l33;
+}
+.l34{
+    background-color: $l34;
+}
+
+
+.d11{
+    background-color: $d11;
+}
+.d12{
+    background-color: $d12;
+}
+.d13{
+    background-color: $d13;
+}
+.d14{
+    background-color: $d14;
+}
+
+.d21{
+    background-color: $d21;
+}
+.d22{
+    background-color: $d22;
+}
+.d23{
+    background-color: $d23;
+}
+.d24{
+    background-color: $d24;
+}
+
+.d31{
+    background-color: $d31;
+}
+.d32{
+    background-color: $d32;
+}
+.d33{
+    background-color: $d33;
+}
+.d34{
+    background-color: $d34;
+}
+
+
